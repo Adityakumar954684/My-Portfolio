@@ -44,8 +44,8 @@ export default function Projects() {
       description: "Responsive personal portfolio website showcasing projects and skills with smooth animations and modern design.",
       image: "https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=500&h=300&fit=crop&crop=center",
       technologies: ["React", "Tailwind CSS", "Framer Motion"],
-      liveDemo: "https://portfolio.example.com",
-      github: "https://github.com/adityakumar",
+      liveDemo: "https://my-portfolio-three-umber-17.vercel.app",
+      github: "https://github.com/Adityakumar954684/My-Portfolio",
       featured: true,
     },
     {
