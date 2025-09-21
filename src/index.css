@@ -1,0 +1,222 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Professional Portfolio Design System - Modern Indigo/Blue/Teal Palette
+All colors MUST be HSL with enhanced contrast and visual hierarchy.
+*/
+
+@layer base {
+  :root {
+    --background: 0 0% 99%;
+    --foreground: 222 84% 4.9%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222 84% 4.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222 84% 4.9%;
+
+    /* Professional Deep Blue Primary */
+    --primary: 221 83% 53%;
+    --primary-foreground: 210 40% 98%;
+
+    /* Sophisticated Blue Secondary */
+    --secondary: 210 40% 94%;
+    --secondary-foreground: 222 84% 4.9%;
+
+    /* Premium Teal Accent */
+    --accent: 142 76% 36%;
+    --accent-foreground: 355 100% 97%;
+
+    /* Professional Grays */
+    --muted: 210 40% 96%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 221 83% 53%;
+
+    /* Premium Portfolio Colors */
+    --hero-gradient-start: 221 83% 53%;
+    --hero-gradient-end: 142 76% 36%;
+    --hero-gradient-middle: 212 100% 47%;
+    --skill-progress: 142 76% 36%;
+    --project-card: 0 0% 100%;
+    --nav-background: 0 0% 100%;
+    --nav-border: 214.3 31.8% 91.4%;
+    --surface-soft: 210 40% 98%;
+    --surface-elevated: 0 0% 100%;
+    --text-subtle: 215.4 16.3% 46.9%;
+    --text-muted: 215 20.2% 65.1%;
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 222 84% 4.9%;
+    --foreground: 210 40% 98%;
+
+    --card: 222 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+
+    /* Bright Professional Blue Primary */
+    --primary: 213 93% 68%;
+    --primary-foreground: 222 84% 4.9%;
+
+    /* Dark Surface Secondary */
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+
+    /* Bright Premium Teal Accent */
+    --accent: 142 76% 36%;
+    --accent-foreground: 222 84% 4.9%;
+
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 213 93% 68%;
+
+    /* Premium Dark Mode Colors */
+    --hero-gradient-start: 213 93% 68%;
+    --hero-gradient-end: 142 76% 36%;
+    --hero-gradient-middle: 212 100% 47%;
+    --skill-progress: 142 76% 36%;
+    --project-card: 217.2 32.6% 17.5%;
+    --nav-background: 222 84% 4.9%;
+    --nav-border: 217.2 32.6% 17.5%;
+    --surface-soft: 220 26% 14%;
+    --surface-elevated: 217.2 32.6% 17.5%;
+    --text-subtle: 215 20.2% 65.1%;
+    --text-muted: 217.9 10.6% 64.9%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    line-height: 1.6;
+    letter-spacing: -0.01em;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-semibold tracking-tight;
+    line-height: 1.2;
+  }
+
+  h1 {
+    @apply text-4xl lg:text-6xl;
+  }
+
+  h2 {
+    @apply text-3xl lg:text-4xl;
+  }
+
+  h3 {
+    @apply text-2xl lg:text-3xl;
+  }
+
+  p {
+    @apply text-muted-foreground leading-7;
+  }
+}
+
+@layer components {
+  .hero-gradient {
+    background: linear-gradient(135deg, hsl(var(--hero-gradient-start)), hsl(var(--hero-gradient-middle)), hsl(var(--hero-gradient-end)));
+  }
+
+  .glass-effect {
+    backdrop-filter: blur(20px) saturate(180%);
+    background: hsl(var(--nav-background) / 0.9);
+    border: 1px solid hsl(var(--nav-border) / 0.3);
+    box-shadow: 0 8px 32px hsl(var(--foreground) / 0.1);
+  }
+
+  .skill-glow {
+    box-shadow: 0 4px 24px hsl(var(--skill-progress) / 0.3);
+  }
+
+  .text-gradient {
+    background: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--accent)));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .card-elevated {
+    background: hsl(var(--surface-elevated));
+    border: 1px solid hsl(var(--border));
+    box-shadow: 0 4px 6px -1px hsl(var(--foreground) / 0.1), 0 2px 4px -1px hsl(var(--foreground) / 0.06);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .card-elevated:hover {
+    box-shadow: 0 20px 25px -5px hsl(var(--foreground) / 0.1), 0 10px 10px -5px hsl(var(--foreground) / 0.04);
+    transform: translateY(-2px);
+  }
+
+  .surface-soft {
+    background: hsl(var(--surface-soft));
+  }
+
+  .text-subtle {
+    color: hsl(var(--text-subtle));
+  }
+
+  .text-muted-custom {
+    color: hsl(var(--text-muted));
+  }
+
+  .section-padding {
+    @apply py-20 lg:py-28;
+  }
+
+  .container-custom {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+  
+}
