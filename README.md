@@ -1,20 +1,68 @@
-# Welcome to Our Portfolio project
+# MyPortfolio
 
-## Project info
+A modern, responsive portfolio website built with Vite, React, TypeScript, shadcn-ui, and Tailwind CSS.
 
-**URL**: https://lovable.dev/projects/e4c12bc3-4191-441a-ab4f-3b3773770f7f
+## Live Demo
 
+[View the project here](https://my-portfolio-three-umber-17.vercel.app
+)
 
+## Features
 
-## What technologies are used for this project?
+- ⚡ Fast development with Vite
+- 🎨 Beautiful UI with shadcn-ui and Tailwind CSS
+- 💡 Type-safe codebase using TypeScript
+- 📱 Responsive design for all devices
+- 🧩 Modular React components
 
-This project is built with:
+## Technologies Used
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+- [Vite](https://vitejs.dev/)
+- [React](https://react.dev/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [shadcn-ui](https://ui.shadcn.com/)
+- [Tailwind CSS](https://tailwindcss.com/)
+
+## Getting Started
+
+1. **Clone the repository:**
+	```
+	git clone https://github.com/Adityakumar954684/My-Portfolio.git
+	cd My-Portfolio
+	```
+
+2. **Install dependencies:**
+	```
+	npm install
+	```
+
+3. **Start the development server:**
+	```
+	npm run dev
+	```
+
+4. **Build for production:**
+	```
+	npm run build
+	```
+
+## Project Structure
+
+```
+src/
+  assets/         # Images and static assets
+  components/     # Reusable UI components
+  hooks/          # Custom React hooks
+  lib/            # Utility functions
+  pages/          # Main page components (Home, About, Projects, etc.)
+  App.tsx         # Main app component
+  main.tsx        # Entry point
+public/           # Static files
+```
+
+## License
+
+This project is licensed under the MIT License.
 
 
 
