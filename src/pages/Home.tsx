@@ -69,7 +69,7 @@ export default function Home() {
             >
               Hi, I'm{" "}
               <span className="relative inline-block">
-                <span className="text-accent drop-shadow-lg">Aditya kumar singh</span>
+                <span className="text-accent drop-shadow-lg">Aditya kumar</span>
                 <motion.div
                   initial={{ scaleX: 0 }}
                   animate={{ scaleX: 1 }}
