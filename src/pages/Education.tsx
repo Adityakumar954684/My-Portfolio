@@ -80,7 +80,25 @@ export default function Education() {
       issuer: "Practice Projects",
       year: "2023",
       description: "Mobile-first design principles, CSS Grid, Flexbox, and responsive design patterns"
-    }
+    },
+    {
+    title: "TypeScript Essentials",
+    issuer: "Self-Learning",
+    year: "2024",
+    description: "Understanding static typing, interfaces, and generics to build scalable React applications"
+    },
+    {
+    title: "Tailwind CSS",
+    issuer: "Practice Projects",
+    year: "2024",
+    description: "Creating responsive and modern UI with utility-first CSS using Tailwind framework"
+    },
+    {
+    title: "Git & GitHub Workflows",
+    issuer: "Self-Learning",
+    year: "2023",
+    description: "Version control, branching strategies, pull requests, and collaborative development practices"
+    },
   ];
 
   return (
