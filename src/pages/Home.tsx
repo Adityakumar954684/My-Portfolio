@@ -114,13 +114,12 @@ export default function Home() {
                 </Link>
               </Button>
               <Button asChild size="lg" variant="outline" 
-               className="bg-accent/20 border-accent/50 text-white hover:bg-accent/30 backdrop-blur-sm font-bold px-8 py-6 text-lg shadow-xl">
-               <a href="/Aditya_Kumar_Resume.pdf" download target="_blank" rel="noopener noreferrer">
-               <Download className="mr-2 h-5 w-5" />
-              Resume
-                </a>
-              </Button>
-
+              className="flex items-center bg-accent/20 border-accent/50 text-white hover:bg-accent/30 backdrop-blur-sm font-bold px-8 py-6 text-lg shadow-xl">
+              <a href="/Aditya_Kumar_Resume.pdf" download target="_blank" rel="noopener noreferrer" className="flex items-center">
+                <Download className="mr-2 h-5 w-5" />
+                Resume
+              </a>
+            </Button>
             </motion.div>
 
             {/* Social Links */}
