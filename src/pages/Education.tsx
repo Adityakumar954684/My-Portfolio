@@ -96,7 +96,7 @@ export default function Education() {
     {
     title: "Git & GitHub Workflows",
     issuer: "Self-Learning",
-    year: "2023",
+    year: "2024",
     description: "Version control, branching strategies, pull requests, and collaborative development practices"
     },
   ];
