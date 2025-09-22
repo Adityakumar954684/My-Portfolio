@@ -60,13 +60,13 @@ export default function Contact() {
     {
       icon: Youtube,
       label: "YouTube",
-      href: "https://www.youtube.com/@adityasinghbittu123",
+      href: "#",
       color: "hover:text-red-600",
     },
     {
       icon: Instagram,
       label: "Instagram",
-      href: "https://www.instagram.com/aditya887342/",
+      href: "#",
       color: "hover:text-pink-600",
     },
   ];
