@@ -110,10 +110,12 @@ export default function Home() {
               </Button>
               <Button asChild size="lg" variant="outline" className="bg-white/10 border-white/40 text-white hover:bg-white/25 backdrop-blur-sm font-bold px-8 py-6 text-lg shadow-xl">
                 <Link to="/projects">
-                  View Portfolio
+                  View Projects
                 </Link>
               </Button>
               <Button size="lg" variant="outline" className="bg-accent/20 border-accent/50 text-white hover:bg-accent/30 backdrop-blur-sm font-bold px-8 py-6 text-lg shadow-xl">
+              <a href="/Aditya_Resume.pdf" download target="_blank" rel="noopener noreferrer"></a>
+
                 <Download className="mr-2 h-5 w-5" />
                 Resume
               </Button>
