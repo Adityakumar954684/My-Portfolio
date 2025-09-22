@@ -24,8 +24,8 @@ export default function Home() {
   const socialLinks = [
     { icon: Github, href: "https://github.com/Adityakumar954684 ", label: "GitHub" },
     { icon: Linkedin, href: "https://www.linkedin.com/in/aditya-kumar-638340280/", label: "LinkedIn" },
-    { icon: Youtube, href: "https://www.youtube.com/@adityasinghbittu123", label: "YouTube" },
-    { icon: Instagram, href: "https://www.instagram.com/aditya887342/", label: "Instagram" },
+    { icon: Youtube, href: "#", label: "YouTube" },
+    { icon: Instagram, href: "#", label: "Instagram" },
   ];
 
   return (
