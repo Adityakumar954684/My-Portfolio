@@ -2,6 +2,9 @@ import { motion } from "framer-motion";
 
 import { Link } from "react-router-dom";
 
+import { Typewriter } from 'react-simple-typewriter';
+
+
 import { ArrowRight, Download, Github, Linkedin, Youtube, Instagram } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
@@ -124,7 +127,7 @@ return (
 
           transition={{ duration: 0.8, delay: 0.4 }}
 
-          className="text-4xl md:text-6xl xl:text-7xl font-bold mb-6 leading-tight"
+          className="text-4xl md:text-6xl xl:text-6xl font-bold mb-6 leading-tight mt-10"
 
         >
 
@@ -164,10 +167,22 @@ return (
 
         >
 
-          <h2 className="text-2xl md:text-4xl font-bold text-white/95 tracking-tight">
-
-            Frontend Developer
-
+         <h2 className="text-2xl md:text-4xl font-bold text-white/95 tracking-tight mb-4">
+            <span className="bg-gradient-to-r from-gray-100 via-gray-300 to-gray-400 bg-clip-text text-transparent drop-shadow-[0_0_8px_rgba(255,255,255,0.6)]">
+              <Typewriter
+                words={[
+                  'Frontend Developer',
+                  'UI/UX Designer'
+              
+                ]}
+                loop={0} // infinite loop
+                cursor
+                cursorStyle="|"
+                typeSpeed={70}
+                deleteSpeed={50}
+                delaySpeed={1500}
+              />
+            </span>
           </h2>
 
           <p className="text-lg md:text-xl text-white/85 max-w-2xl lg:max-w-none leading-relaxed">
@@ -302,7 +317,7 @@ return (
 
         variants={itemVariants}
 
-        className="order-1 lg:order-2 flex justify-center mt-40 lg:mt-0 "
+        className="order-1 lg:order-2 flex justify-center mt-40 lg:mt-16 "
 
       >
 
@@ -322,7 +337,7 @@ return (
 
           {/* Image Container with Professional Styling */}
 
-          <div className="relative w-80 h-80 md:w-96 md:h-96 lg:w-[450px] lg:h-[450px]">
+          <div className="relative w-80 h-80 md:w-96 md:h-96 lg:w-[370px] lg:h-[370px]">
 
             {/* Glowing Background */}
 
