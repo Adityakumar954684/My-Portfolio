@@ -70,12 +70,9 @@ export default function Home() {
             >
               Hi, I'm{" "}
               <span className="relative inline-block">
-               <span className="relative inline-block">
-                <span className="bg-gradient-to-r from-emerald-400 via-lime-400 to-green-500 bg-clip-text text-transparent drop-shadow-[0_0_10px_rgba(52,211,153,0.8)]">
+                <span className="bg-gradient-to-r from-pink-500 via-purple-500 to-pink-400 bg-clip-text text-transparent drop-shadow-lg">
                   Aditya Kumar
                 </span>
-              </span>
-
                 <motion.div
                   initial={{ scaleX: 0 }}
                   animate={{ scaleX: 1 }}
@@ -92,25 +89,24 @@ export default function Home() {
               className="space-y-6 mb-10"
             >
               <h2 className="text-2xl md:text-4xl font-bold text-white/95 tracking-tight mb-4">
-                
-                  <span className="bg-gradient-to-r from-yellow-400 via-amber-500 to-orange-500 bg-clip-text text-transparent drop-shadow-[0_0_10px_rgba(251,191,36,0.8)]">
-                    <Typewriter
-                      words={[
-                        'Frontend Developer',
-                        'React JS Enthusiast',
-                        'UI/UX Designer',
-                        'JavaScript Developer'
-                      ]}
-                      loop={0} // infinite loop
-                      cursor
-                      cursorStyle="|"
-                      typeSpeed={70}
-                      deleteSpeed={50}
-                      delaySpeed={1500}
-                    />
-                  </span>
-                </h2>
-
+                I am a{' '}
+                <span className="text-accent">
+                  <Typewriter
+                    words={[
+                      'Frontend Developer',
+                      'React JS Enthusiast',
+                      'UI/UX Designer',
+                      'JavaScript Developer'
+                    ]}
+                    loop={0} // infinite loop
+                    cursor
+                    cursorStyle="|"
+                    typeSpeed={70}
+                    deleteSpeed={50}
+                    delaySpeed={1500}
+                  />
+                </span>
+              </h2>
               <p className="text-lg md:text-xl text-white/85 max-w-2xl lg:max-w-none leading-relaxed">
                 Crafting exceptional digital experiences with modern technologies.
                 Specialized in React, TypeScript, and responsive design that drives results.
@@ -189,7 +185,6 @@ export default function Home() {
                 {/* Glowing Background */}
                 <div className="absolute inset-0 bg-gradient-to-tr from-accent/30 to-primary/30 rounded-3xl blur-3xl scale-110"></div>
 
-
                 {/* Main Image Frame */}
                 <div className="relative w-full h-full bg-gradient-to-tr from-white/20 to-white/5 backdrop-blur-sm rounded-3xl p-2 border border-white/30 shadow-2xl">
                   <div className="w-full h-full rounded-2xl overflow-hidden bg-gradient-to-tr from-accent/10 to-primary/10">
@@ -200,7 +195,6 @@ export default function Home() {
                     />
                   </div>
                 </div>
-
 
                 {/* Floating Elements */}
                 <motion.div
