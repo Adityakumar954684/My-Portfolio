@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { ArrowRight, Download, Github, Linkedin, Youtube, Instagram } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import profileImage from "@/assets/WhatsApp Image 2025-09-18 at 09.42.28_e3a6681e.jpg";
+import { Typewriter } from 'react-simple-typewriter';
 
 export default function Home() {
   const containerVariants = {
@@ -36,20 +37,20 @@ export default function Home() {
         <div className="absolute bottom-1/4 right-1/4 w-64 h-64 bg-accent/20 rounded-full blur-3xl animate-pulse delay-1000"></div>
         <div className="absolute top-1/2 right-1/3 w-32 h-32 bg-white/5 rounded-full blur-2xl"></div>
       </div>
-      
+
       <motion.div
         variants={containerVariants}
         initial="hidden"
         animate="visible"
         className="container-custom relative z-10"
       >
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+        <div className=" w-[90%] md:w-[85%] grid lg:grid-cols-2 gap-12 items-center mx-auto">
 
 
           {/* Left Content */}
           <motion.div variants={itemVariants} className="text-center lg:text-left text-white order-2 lg:order-1">
             <div className="mb-8">
-              <motion.div 
+              <motion.div
                 initial={{ scale: 0, opacity: 0 }}
                 animate={{ scale: 1, opacity: 1 }}
                 transition={{ duration: 0.6, delay: 0.2 }}
@@ -60,16 +61,21 @@ export default function Home() {
                 </span>
               </motion.div>
             </div>
-            
-            <motion.h1 
+
+            <motion.h1
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.4 }}
-              className="text-4xl md:text-6xl xl:text-7xl font-bold mb-6 leading-tight"
+              className="text-4xl md:text-6xl xl:text-5xl font-bold mb-6 leading-tight"
             >
               Hi, I'm{" "}
               <span className="relative inline-block">
-                <span className="text-accent drop-shadow-lg">Aditya kumar</span>
+               <span className="relative inline-block">
+                <span className="bg-gradient-to-r from-emerald-400 via-lime-400 to-green-500 bg-clip-text text-transparent drop-shadow-[0_0_10px_rgba(52,211,153,0.8)]">
+                  Aditya Kumar
+                </span>
+              </span>
+
                 <motion.div
                   initial={{ scaleX: 0 }}
                   animate={{ scaleX: 1 }}
@@ -78,25 +84,42 @@ export default function Home() {
                 />
               </span>
             </motion.h1>
-            
-            <motion.div 
+
+            <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.6 }}
               className="space-y-6 mb-10"
             >
-              <h2 className="text-2xl md:text-4xl font-bold text-white/95 tracking-tight">
-                Frontend Developer
-              </h2>
+              <h2 className="text-2xl md:text-4xl font-bold text-white/95 tracking-tight mb-4">
+                
+                  <span className="bg-gradient-to-r from-yellow-400 via-amber-500 to-orange-500 bg-clip-text text-transparent drop-shadow-[0_0_10px_rgba(251,191,36,0.8)]">
+                    <Typewriter
+                      words={[
+                        'Frontend Developer',
+                        'React JS Enthusiast',
+                        'UI/UX Designer',
+                        'JavaScript Developer'
+                      ]}
+                      loop={0} // infinite loop
+                      cursor
+                      cursorStyle="|"
+                      typeSpeed={70}
+                      deleteSpeed={50}
+                      delaySpeed={1500}
+                    />
+                  </span>
+                </h2>
+
               <p className="text-lg md:text-xl text-white/85 max-w-2xl lg:max-w-none leading-relaxed">
-                Crafting exceptional digital experiences with modern technologies. 
+                Crafting exceptional digital experiences with modern technologies.
                 Specialized in React, TypeScript, and responsive design that drives results.
               </p>
-              
-              
+
+
             </motion.div>
 
-            <motion.div 
+            <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.8 }}
@@ -108,22 +131,22 @@ export default function Home() {
                   <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-2 transition-transform duration-300" />
                 </Link>
               </Button>
-              <Button asChild size="lg" variant="outline" className="bg-white/10 border-white/40 text-white hover:bg-white/25 backdrop-blur-sm font-bold px-8 py-6 text-lg shadow-xl">
+              <Button asChild size="lg" variant="outline" className="bg-white/10 border-white/40 text-white hover:bg-white/25 backdrop-blur-sm font-bold px-8 py-6 text-lg shadow-xl flex md:hidden">
                 <Link to="/projects">
                   View Projects
                 </Link>
               </Button>
-              <Button asChild size="lg" variant="outline" 
-              className="flex items-center bg-accent/20 border-accent/50 text-white hover:bg-accent/30 backdrop-blur-sm font-bold px-8 py-6 text-lg shadow-xl">
-              <a href="/Aditya_Kumar_Resume.pdf" download target="_blank" rel="noopener noreferrer" className="flex items-center">
-                <Download className="mr-2 h-5 w-5" />
-                Resume
-              </a>
-            </Button>
+              <Button asChild size="lg" variant="outline"
+                className="flex items-center bg-accent/20 border-accent/50 text-white hover:bg-accent/30 backdrop-blur-sm font-bold px-8 py-6 text-lg shadow-xl">
+                <a href="/Aditya_Kumar_Resume.pdf" download target="_blank" rel="noopener noreferrer" className="flex items-center">
+                  <Download className="mr-2 h-5 w-5" />
+                  Resume
+                </a>
+              </Button>
             </motion.div>
 
             {/* Social Links */}
-            <motion.div 
+            <motion.div
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 1.2 }}
@@ -150,22 +173,23 @@ export default function Home() {
           </motion.div>
 
           {/* Right Image */}
-          <motion.div 
+          <motion.div
             variants={itemVariants}
-            className="order-1 lg:order-2 flex justify-center mt-28 lg:mt-0"
+            className="order-1 lg:order-2 flex justify-center mt-28 lg:mt-16"
           >
             <motion.div
               initial={{ scale: 0, rotate: -10 }}
               animate={{ scale: 1, rotate: 0 }}
               transition={{ duration: 1, delay: 0.3, type: "spring", stiffness: 100 }}
               className="relative"
-              
+
             >
               {/* Image Container with Professional Styling */}
-              <div className="relative w-80 h-80 md:w-96 md:h-96 lg:w-[450px] lg:h-[450px]">
+              <div className="relative w-80 h-80 md:w-96 md:h-96 lg:w-[370px] lg:h-[370px]">
                 {/* Glowing Background */}
                 <div className="absolute inset-0 bg-gradient-to-tr from-accent/30 to-primary/30 rounded-3xl blur-3xl scale-110"></div>
-                
+
+
                 {/* Main Image Frame */}
                 <div className="relative w-full h-full bg-gradient-to-tr from-white/20 to-white/5 backdrop-blur-sm rounded-3xl p-2 border border-white/30 shadow-2xl">
                   <div className="w-full h-full rounded-2xl overflow-hidden bg-gradient-to-tr from-accent/10 to-primary/10">
@@ -177,6 +201,7 @@ export default function Home() {
                   </div>
                 </div>
 
+
                 {/* Floating Elements */}
                 <motion.div
                   animate={{ y: [0, -10, 0] }}
@@ -185,7 +210,7 @@ export default function Home() {
                 >
                   <span className="text-2xl">💻</span>
                 </motion.div>
-                
+
                 <motion.div
                   animate={{ y: [0, 10, 0] }}
                   transition={{ duration: 4, repeat: Infinity, ease: "easeInOut", delay: 1 }}
@@ -198,7 +223,7 @@ export default function Home() {
           </motion.div>
         </div>
 
-      
+
       </motion.div>
     </div>
   );
