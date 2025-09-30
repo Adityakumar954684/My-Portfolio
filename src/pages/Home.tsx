@@ -107,7 +107,7 @@ return (
 
           >
 
-            <span className="px-6 py-3 bg-white/15 rounded-full text-sm font-semibold backdrop-blur-sm border border-white/30 shadow-lg">
+            <span className="px-6 py-3 bg-white/15 rounded-full text-sm font-semibold backdrop-blur-sm border border-white/30 shadow-lg lg:hidden">
 
               🚀 Frontend Developer & UI/UX Enthusiast
 
@@ -127,7 +127,7 @@ return (
 
           transition={{ duration: 0.8, delay: 0.4 }}
 
-          className="text-4xl md:text-6xl xl:text-6xl font-bold mb-6 leading-tight mt-10"
+          className="text-4xl md:text-6xl xl:text-6xl font-bold mb-6 leading-tight lg:mt-24"
 
         >
 
@@ -406,10 +406,6 @@ return (
       </motion.div>
 
     </div>
-
-
-
-  
 
   </motion.div>
 
