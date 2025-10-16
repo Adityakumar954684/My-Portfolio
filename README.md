@@ -4,8 +4,7 @@ A modern, responsive portfolio website built with Vite, React, TypeScript, shadc
 
 ## Live Demo
 
-[View the project here](https://my-portfolio-three-umber-17.vercel.app
-)
+[View the project here](https://my-portfolio-lyart-omega-85.vercel.app)
 
 ## Features
 
