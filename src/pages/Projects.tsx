@@ -49,13 +49,13 @@ export default function Projects() {
       featured: true,
     },
     {
-      title: "Task Management App",
-      description: "Intuitive task management application with drag-and-drop functionality, categories, and progress tracking.",
+      title: "MindSpace Pro – Modern Productivity & Focus App",
+      description: "A minimalist productivity and focus web app-  Manage tasks, track habits, and stay focused — all in one elegant dashboard",
       image: "https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=500&h=300&fit=crop&crop=center",
-      technologies: ["React", "CSS3", "Local Storage", "JavaScript"],
-      liveDemo: "#",
+      technologies: ["Vite", "React", "TypeScript", "Tailwind CSS","Shadcn/ui"],
+      liveDemo: "https://mind-space-project-rho.vercel.app/",
       github: "#",
-      featured: false,
+      featured: true,
     },
     {
       title: "Restaurant Landing Page",
