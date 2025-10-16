@@ -30,15 +30,7 @@ export default function Projects() {
       github: "#",
       featured: true,
     },
-    {
-      title: "Weather App",
-      description: "Clean and intuitive weather application with location-based forecasts, interactive maps, and beautiful animations.",
-      image: "https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?w=500&h=300&fit=crop&crop=center",
-      technologies: ["HTML5", "CSS3", "JavaScript", "Weather API"],
-      liveDemo: "#",
-      github: "#",
-      featured: false,
-    },
+
     {
       title: "Portfolio Website",
       description: "Responsive personal portfolio website showcasing projects and skills with smooth animations and modern design.",
@@ -51,7 +43,7 @@ export default function Projects() {
     {
       title: "MindSpace Pro – Modern Productivity & Focus App",
       description: "A minimalist productivity and focus web app-  Manage tasks, track habits, and stay focused — all in one elegant dashboard",
-      image: "https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=500&h=300&fit=crop&crop=center",
+      image: "#",
       technologies: ["Vite", "React", "TypeScript", "Tailwind CSS","Shadcn/ui"],
       liveDemo: "https://mind-space-project-rho.vercel.app/",
       github: "#",
