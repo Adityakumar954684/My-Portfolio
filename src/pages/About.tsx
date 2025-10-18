@@ -80,20 +80,24 @@ export default function About() {
           <motion.div variants={itemVariants} className="space-y-6">
             <h2 className="text-3xl font-bold">Hello, I'm Aditya Kumar</h2>
             <div className="space-y-4 text-muted-foreground leading-relaxed">
-              <p>
-                I'm a passionate Frontend Developer currently pursuing my B.Tech in Computer Science Engineering 
-                at Sri Venkateswara College of Engineering and Technology (SVCET), expected to graduate in 2026.
-              </p>
-              <p>
-                My journey in web development began with curiosity about how websites work, and it has evolved 
-                into a deep passion for creating beautiful, functional, and user-friendly web applications. 
-                I specialize in modern frontend technologies including React, JavaScript, and Tailwind CSS.
-              </p>
-              <p>
-                When I'm not coding, you can find me exploring new technologies, contributing to open-source 
-                projects, or sharing my knowledge through YouTube and social media. I believe in continuous 
-                learning and staying updated with the latest trends in web development.
-              </p>
+            <p>
+              I am a dedicated <strong>Full Stack MERN Developer</strong> pursuing a <strong>B.Tech in Computer Science Engineering</strong> 
+              at Sri Venkateswara College of Engineering and Technology (SVCET), with graduation expected in <strong>2026</strong>.
+            </p>
+
+            <p>
+              My professional focus lies in designing and developing scalable, high-performance web applications using the 
+              <strong>MERN stack (MongoDB, Express.js, React, Node.js)</strong>. I have a strong command of modern technologies 
+              such as <strong>TypeScript</strong>, <strong>Tailwind CSS</strong>, and other tools that enhance user experience 
+              and development efficiency.
+            </p>
+
+            <p>
+              I am passionate about continuous learning, exploring emerging technologies, and building real-world solutions 
+              that deliver value and innovation in the field of web development.
+            </p>
+
+
             </div>
           </motion.div>
         </div>

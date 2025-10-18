@@ -2,6 +2,11 @@ import { motion } from "framer-motion";
 import { Code, Palette, Database, Globe, Zap, Users } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Progress } from "@/components/ui/progress";
+import {   
+  Wrench ,   
+  Heart,
+  Target  
+} from "lucide-react";
 
 export default function Skills() {
   const containerVariants = {
@@ -21,61 +26,73 @@ export default function Skills() {
   };
 
   const skillCategories = [
-    {
-      title: "Frontend Technologies",
-      icon: Code,
-      skills: [
-        { name: "HTML5", level: 95 },
-        { name: "CSS3", level: 90 },
-        { name: "JavaScript", level: 85 },
-        { name: "React", level: 80 },
-        { name: "Tailwind CSS", level: 88 },
-      ],
-    },
-    {
-      title: "Development Tools",
-      icon: Zap,
-      skills: [
-        { name: "Git & GitHub", level: 75 },
-        { name: "VS Code", level: 90 },
-       
-        { name: "Responsive Design", level: 85 },
-      ],
-    },
-    {
-      title: "Design & UI/UX",
-      icon: Palette,
-      skills: [
-        { name: "Figma", level: 65 },
-        { name: "User Interface Design", level: 75 },
-        { name: "Responsive Layouts", level: 85 },
-        { name: "Component Libraries", level: 80 },
-      ],
-    },
-  ];
-
-  const softSkills = [
-    {
-      title: "Problem Solving",
-      description: "Breaking down complex problems into manageable solutions",
-      icon: Code,
-    },
-    {
-      title: "Team Collaboration",
-      description: "Working effectively in team environments and pair programming",
-      icon: Users,
-    },
-    {
-      title: "Communication",
-      description: "Clear technical communication and documentation skills",
-      icon: Globe,
-    },
-    {
-      title: "Continuous Learning",
-      description: "Staying updated with latest technologies and best practices",
-      icon: Database,
-    },
-  ];
+  {
+    title: "Frontend Development",
+    icon: Code,
+    skills: [
+      { name: "HTML5", level: 95 },
+      { name: "CSS3", level: 90 },
+      { name: "JavaScript (ES6+)", level: 88 },
+      { name: "React.js", level: 85 },
+      { name: "Tailwind CSS", level: 90 },
+      { name: "TypeScript", level: 75 },
+    ],
+  },
+  {
+    title: "Backend Development",
+    icon: Zap,
+    skills: [
+      { name: "Node.js", level: 80 },
+      { name: "Express.js", level: 78 },
+      { name: "MongoDB", level: 75 },
+      { name: "RESTful APIs", level: 82 },
+      { name: "Authentication (JWT, OAuth)", level: 70 },
+    ],
+  },
+  {
+    title: "Development Tools & Deployment",
+    icon: Wrench, // you can import Wrench from lucide-react
+    skills: [
+      { name: "Git & GitHub", level: 85 },
+      { name: "VS Code", level: 90 },
+      { name: "Postman", level: 80 },
+      { name: "Vercel / Netlify", level: 78 },
+      { name: "Responsive Design", level: 88 },
+    ],
+  },
+  {
+    title: "UI/UX & Design",
+    icon: Palette,
+    skills: [
+      { name: "Figma", level: 70 },
+      { name: "User Interface Design", level: 80 },
+      { name: "Component Libraries (ShadCN, Material UI)", level: 85 },
+      { name: "Responsive Layouts", level: 90 },
+    ],
+  },
+];
+const softSkills = [
+  {
+    title: "Team Collaboration",
+    description: "Work effectively with cross-functional teams to deliver high-quality solutions.",
+    icon: Users,
+  },
+  {
+    title: "Problem Solving",
+    description: "Analyze challenges and implement efficient and scalable solutions.",
+    icon: Zap,
+  },
+  {
+    title: "Communication",
+    description: "Convey ideas clearly and collaborate efficiently with team members.",
+    icon: Heart,
+  },
+  {
+    title: "Time Management",
+    description: "Prioritize tasks and meet deadlines in fast-paced environments.",
+    icon: Target,
+  },
+];
 
   return (
     <div className="min-h-screen py-20 px-4 sm:px-6 lg:px-8">
@@ -138,33 +155,38 @@ export default function Skills() {
         </motion.div>
 
         {/* Soft Skills */}
-        <motion.div variants={itemVariants}>
-          <h2 className="text-2xl font-bold mb-8 text-center">Professional Skills</h2>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {softSkills.map((skill, index) => (
-              <motion.div
-                key={skill.title}
-                variants={itemVariants}
-                whileHover={{ y: -5 }}
-              >
-                <Card className="h-full text-center hover:shadow-lg transition-shadow duration-300">
-                  <CardContent className="p-6">
-                    <motion.div
-                      whileHover={{ scale: 1.1 }}
-                      className="inline-flex items-center justify-center w-12 h-12 mb-4 rounded-full bg-primary/10"
-                    >
-                      <skill.icon className="h-6 w-6 text-primary" />
-                    </motion.div>
-                    <h3 className="font-semibold mb-2">{skill.title}</h3>
-                    <p className="text-sm text-muted-foreground">
-                      {skill.description}
-                    </p>
-                  </CardContent>
-                </Card>
-              </motion.div>
-            ))}
-          </div>
-        </motion.div>
+         {/* Professional Skills Section */}
+<motion.div variants={itemVariants} className="mb-16 px-4">
+  <h2 className="text-3xl font-extrabold mb-10 text-center bg-gradient-to-r from-primary to-purple-500 text-transparent bg-clip-text">
+    Professional Skills
+  </h2>
+
+  <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
+    {softSkills.map((skill, index) => (
+      <motion.div
+        key={skill.title}
+        variants={itemVariants}
+        whileHover={{ y: -5, scale: 1.02 }}
+        transition={{ type: "spring", stiffness: 200 }}
+      >
+        <Card className="h-full text-center bg-card/60 backdrop-blur-md border border-border/30 hover:border-primary/50 transition-all duration-300 shadow-sm hover:shadow-lg rounded-2xl">
+          <CardContent className="p-6 flex flex-col items-center">
+            <motion.div
+              whileHover={{ scale: 1.2 }}
+              className="flex items-center justify-center w-14 h-14 mb-4 rounded-full bg-primary/10"
+            >
+              <skill.icon className="h-7 w-7 text-primary" />
+            </motion.div>
+
+            <h3 className="text-lg font-semibold mb-2 text-foreground">{skill.title}</h3>
+            <p className="text-sm text-muted-foreground text-center">{skill.description}</p>
+          </CardContent>
+        </Card>
+      </motion.div>
+    ))}
+  </div>
+</motion.div>
+
 
         {/* Learning Journey */}
         <motion.div variants={itemVariants} className="mt-16 text-center">

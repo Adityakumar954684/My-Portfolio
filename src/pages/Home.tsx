@@ -109,7 +109,7 @@ return (
 
             <span className="px-6 py-3 bg-white/15 rounded-full text-sm font-semibold backdrop-blur-sm border border-white/30 shadow-lg lg:hidden">
 
-              🚀 Frontend Developer & UI/UX Enthusiast
+              🚀 FullStack Developer & UI/UX Enthusiast
 
             </span>
 
@@ -171,7 +171,8 @@ return (
             <span className="bg-gradient-to-r from-gray-100 via-gray-300 to-gray-400 bg-clip-text text-transparent drop-shadow-[0_0_8px_rgba(255,255,255,0.6)]">
               <Typewriter
                 words={[
-                  'Frontend Developer',
+                  'FullStack Developer',
+                  'MERN Stack Developer',
                   'UI/UX Designer'
               
                 ]}
@@ -187,9 +188,8 @@ return (
 
           <p className="text-lg md:text-xl text-white/85 max-w-2xl lg:max-w-none leading-relaxed">
 
-            Crafting exceptional digital experiences with modern technologies. 
-
-            Specialized in React, TypeScript, and responsive design that drives results.
+            Full Stack MERN Developer crafting powerful and scalable digital experiences using modern web technologies.
+            Specialized in React, Node.js, Express, MongoDB, and responsive, high-performance design that drives impactful results.
 
           </p>
 
