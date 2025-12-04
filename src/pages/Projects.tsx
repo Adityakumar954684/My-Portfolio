@@ -32,23 +32,15 @@ export default function Projects() {
     },
 
     {
-      title: "Portfolio Website",
-      description: "Responsive personal portfolio website showcasing projects and skills with smooth animations and modern design.",
+      title: "SkillNexus – Creator Collaboration Platform",
+      description: "Developed a full-stack MERN platform connecting creators with clients via service posts and direct messaging. Implemented secure authentication (JWT), role-based access, creator portfolios, and real-time chat (Socket.io). Designed a modern, responsive UI with React, Tailwind, and reusable components. Built modular REST APIs using Node.js, Express, MongoDB, and Cloudinary.",
       image: "https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=500&h=300&fit=crop&crop=center",
       technologies: ["React", "Tailwind CSS", "Framer Motion"],
-      liveDemo: "https://my-portfolio-three-umber-17.vercel.app",
-      github: "https://github.com/Adityakumar954684/My-Portfolio",
+      liveDemo: "https://skill-nexuss.vercel.app/",
+      github: "https://github.com/Adityakumar954684/skillNexuss/tree/main",
       featured: true,
     },
-    {
-      title: "MindSpace Pro – Modern Productivity & Focus App",
-      description: "A minimalist productivity and focus web app-  Manage tasks, track habits, and stay focused — all in one elegant dashboard",
-      image: "#",
-      technologies: ["Vite", "React", "TypeScript", "Tailwind CSS","Shadcn/ui"],
-      liveDemo: "https://mind-space-project-rho.vercel.app/",
-      github: "#",
-      featured: true,
-    },
+    
     {
       title: "Restaurant Landing Page",
       description: "Elegant restaurant website with menu showcase, reservation system, and mobile-first responsive design.",
@@ -58,15 +50,7 @@ export default function Projects() {
       github: "#",
       featured: false,
     },
-    {
-      title: "Learning Platform UI",
-      description: "Modern learning platform interface with course management, progress tracking, and interactive elements.",
-      image: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=500&h=300&fit=crop&crop=center",
-      technologies: ["React", "Tailwind CSS", "TypeScript"],
-      liveDemo: "#",
-      github: "#",
-      featured: true,
-    },
+    
   ];
 
   const featuredProjects = projects.filter(project => project.featured);
