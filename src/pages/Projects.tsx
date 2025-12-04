@@ -22,12 +22,12 @@ export default function Projects() {
 
   const projects = [
     {
-      title: "E-Commerce Dashboard",
-      description: "A modern React-based dashboard for e-commerce management with real-time analytics, product management, and responsive design.",
+      title: "MyPortfolio – Personal Portfolio Website",
+      description: "Developed a modern, responsive portfolio using React, TypeScript, Tailwind CSS, shadcn-ui, and Vite. Showcases projects, skills, and achievements with modular components and a mobile-first design.",
       image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=500&h=300&fit=crop&crop=center",
-      technologies: ["React", "Tailwind CSS", "Chart.js", "JavaScript"],
-      liveDemo: "#",
-      github: "#",
+      technologies: ["React", "Tailwind CSS", "Vite", "TypeScript","shadcn/ui"],
+      liveDemo: "https://my-portfolio-lyart-omega-85.vercel.app",
+      github: "https://github.com/Adityakumar954684/My-Portfolio",
       featured: true,
     },
 
