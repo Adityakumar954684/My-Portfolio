@@ -55,9 +55,6 @@ export default function About() {
           <h1 className="text-4xl md:text-5xl font-bold mb-4 text-gradient">
             About Me
           </h1>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Get to know the person behind the code
-          </p>
         </motion.div>
 
         <div className="grid lg:grid-cols-2 gap-12 items-center mb-16">
